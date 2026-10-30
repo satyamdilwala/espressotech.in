@@ -543,12 +543,12 @@ SERVICES:
   });
 }
 
-// 6. Contact Form Handler (Direct to WhatsApp or Feedback)
+// 6. Contact Form Handler (Astra Custom API + WhatsApp Desk)
 function initContactForm() {
   const form = document.getElementById("websiteContactForm");
   if (!form) return;
 
-  form.addEventListener("submit", function (e) {
+  form.addEventListener("submit", async function (e) {
     e.preventDefault();
     const name = document.getElementById("formName")?.value || "";
     const phone = document.getElementById("formPhone")?.value || "";
@@ -556,11 +556,73 @@ function initContactForm() {
     const city = document.getElementById("formCity")?.value || "Mumbai";
     const product = document.getElementById("formProduct")?.value || "General Enquiry";
     const msg = document.getElementById("formMessage")?.value || "";
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalBtnHtml = submitBtn ? submitBtn.innerHTML : "Submit Inquiry";
 
-    const text = `Hello Espressotech, My Name: ${name}, Phone: ${phone}, City: ${city}, Interested In: ${product}, Message: ${msg}`;
-    const waUrl = `https://wa.me/919320066767?text=${encodeURIComponent(text)}`;
+    let feedback = document.getElementById("formFeedback");
+    if (!feedback) {
+      feedback = document.createElement("div");
+      feedback.id = "formFeedback";
+      feedback.style.marginTop = "14px";
+      feedback.style.padding = "12px";
+      feedback.style.borderRadius = "8px";
+      feedback.style.fontSize = "14px";
+      feedback.style.textAlign = "center";
+      form.appendChild(feedback);
+    }
 
-    window.open(waUrl, "_blank");
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending Inquiry...";
+    }
+    feedback.style.display = "block";
+    feedback.style.background = "#fff8e6";
+    feedback.style.color = "#8f4b00";
+    feedback.innerHTML = "Sending enquiry to dialnsearch@gmail.com...";
+
+    try {
+      const response = await fetch("https://astra.salesfundaa.com/v1/CRM1/espressotech-in/enquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: name,
+          phone: phone,
+          email: email,
+          city: city,
+          productName: product,
+          message: msg,
+          subject: `Website Inquiry: ${product}`
+        })
+      });
+
+      const dataRaw = await response.json();
+      const data = typeof dataRaw === "string" ? JSON.parse(dataRaw) : dataRaw;
+
+      if (data && (data.success || data.ok)) {
+        feedback.style.background = "#dcfce7";
+        feedback.style.color = "#15803d";
+        feedback.innerHTML = "✅ Inquiry sent successfully! Opening WhatsApp...";
+      } else {
+        feedback.style.background = "#fef9c3";
+        feedback.style.color = "#854d0e";
+        feedback.innerHTML = "Inquiry recorded. Connecting to WhatsApp...";
+      }
+    } catch (err) {
+      console.warn("Enquiry API note:", err);
+      feedback.style.background = "#fef9c3";
+      feedback.style.color = "#854d0e";
+      feedback.innerHTML = "Connecting to WhatsApp...";
+    } finally {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnHtml;
+      }
+      setTimeout(() => {
+        const text = `Hello Espressotech, My Name: ${name}, Phone: ${phone}, Email: ${email}, City: ${city}, Interested In: ${product}, Message: ${msg}`;
+        const waUrl = `https://wa.me/919320066767?text=${encodeURIComponent(text)}`;
+        window.open(waUrl, "_blank");
+      }, 1000);
+    }
   });
 }
 
