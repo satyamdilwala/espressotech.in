@@ -693,7 +693,7 @@ function getWhatsAppLink(productName, customQuery) {
   const phone = "919320066767";
   let message = "";
   if (productName) {
-    message = `Hello Espresso Tech Vending Solution, I am interested in inquiring about "${productName}". Please share pricing, availability, and delivery details for Mumbai/Thane/Navi Mumbai.`;
+    message = `Hello Espresso Tech Vending Solution, I am interested in inquiring about "${productName}". Please share pricing and availability details.`;
   } else if (customQuery) {
     message = `Hello Espresso Tech Vending Solution, ${customQuery}`;
   } else {

@@ -129,7 +129,7 @@ function initCatalogPage() {
           <div class="product-meta-pills">
             ${metaHtml}
             ${shelfLifeHtml}
-            <span class="meta-pill" style="color: #c8681b; background: #fff5ee;">📍 Mumbai & Thane Delivery</span>
+            <span class="meta-pill" style="color: #c8681b; background: #fff5ee;">📍 Ready Stock</span>
           </div>
           <div class="product-actions">
             <a href="${product.seoUrl || 'product-detail.html?id=' + product.id}" class="btn btn-outline btn-sm">
@@ -290,7 +290,7 @@ function initProductDetailPage() {
             <tr><th>Flavour</th><td>${product.flavour || "Pure Authentic Blend"}</td></tr>
             <tr><th>Storage Instructions</th><td>${product.storage || "Store in cool & dry place"}</td></tr>
             <tr><th>Package Includes</th><td>${product.packageIncludes || "1 Pack"}</td></tr>
-            <tr><th>Target Delivery Areas</th><td>Mumbai, Thane, Navi Mumbai & PAN India</td></tr>
+            <tr><th>Supply Coverage</th><td>PAN India & Worldwide Export</td></tr>
           </tbody>
         </table>
       </div>
@@ -334,7 +334,7 @@ function initProductDetailPage() {
         
         <div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid var(--color-border); text-align: left;">
           <p style="font-size: 0.88rem; color: #645e59; margin-bottom: 8px;">
-            <strong>Immediate Delivery & Demos in:</strong> Ghatkopar, Powai, Andheri, BKC, Thane, Vashi, Mahape, Navi Mumbai.
+            <strong>On-site Demos in:</strong> Ghatkopar, Powai, Andheri, BKC, Thane, Vashi, Mahape, Navi Mumbai.
           </p>
           <div style="display:flex; gap:10px; flex-wrap:wrap;">
             <span class="meta-pill" style="background:#e8f5e9; color:#1b5e20;">✔ 100% Genuine Quality</span>
