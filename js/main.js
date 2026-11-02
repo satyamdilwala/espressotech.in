@@ -129,7 +129,7 @@ function initCatalogPage() {
           <div class="product-meta-pills">
             ${metaHtml}
             ${shelfLifeHtml}
-            <span class="meta-pill" style="color: #c8681b; background: #fff5ee;">📍 Ready Stock</span>
+            <span class="meta-pill" style="color: #c8681b; background: #fff5ee;">📍 All India Delivery & Export</span>
           </div>
           <div class="product-actions">
             <a href="${product.seoUrl || 'product-detail.html?id=' + product.id}" class="btn btn-outline btn-sm">
