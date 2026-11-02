@@ -372,6 +372,10 @@ function initProductDetailPage() {
             <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
             Call +91-9320066767
           </a>
+          <a href="tel:+919833480767" class="btn btn-secondary btn-lg" style="flex:1; min-width:200px;">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            Call +91-9833480767
+          </a>
         </div>
 
         ${specsHtml}
@@ -425,7 +429,7 @@ ESPRESSOTECH VENDING SOLUTION - COMPANY & PRODUCT PORTFOLIO
 CONTACT DETAILS:
 Company Name : Espresso Tech Vending Solution
 Telephone    : +91 22- 251 12345 / +91 22- 251 33333
-Mobile No    : +91-9320066767
+Mobile No    : +91-9320066767 / +91-9833480767
 Email ID     : info@espressotech.in
 Website      : www.espressotech.in
 Facebook     : https://www.facebook.com/profile.php?id=61595606516311

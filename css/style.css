@@ -151,7 +151,8 @@ button, input, textarea, select {
 .top-bar-links {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 14px;
+  flex-wrap: wrap;
 }
 
 .top-bar-links a {
