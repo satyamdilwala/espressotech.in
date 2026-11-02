@@ -93,7 +93,7 @@ const productsData = [
     flavour: "Ginger Tea (Adrak Tea)",
     storage: "Store in a cool and dry place away from direct sunlight.",
     shortDesc: "Experience the refreshing and spicy warmth of Ginger Tea with our Instant Tea Premix. Carefully blended for a rich tea experience.",
-    description: "Experience the refreshing and spicy taste of Ginger Tea with our Instant Tea Premix. Carefully blended for a rich tea experience, this premix is quick and convenient—simply add hot water and enjoy a delicious cup of tea anytime. Excellent for rejuvenating corporate teams and tea lovers across Mumbai and Thane.",
+    description: "Experience the refreshing and spicy taste of Ginger Tea with our Instant Tea Premix. Carefully blended for a rich tea experience, this premix is quick and convenient—simply add hot water and enjoy a delicious cup of tea anytime. Excellent for rejuvenating corporate teams and tea lovers across India and overseas.",
     features: [
       "Authentic Ginger (Adrak) Tea Taste & Warmth",
       "No Artificial Flavour Added",
