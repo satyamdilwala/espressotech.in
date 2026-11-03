@@ -345,6 +345,22 @@ button, input, textarea, select {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1200px) {
+  .nav-menu {
+    gap: 14px;
+  }
+  .nav-menu .nav-link {
+    font-size: 0.88rem;
+    padding: 8px 1px;
+  }
+  .header-wrapper {
+    gap: 10px;
+  }
+  .brand-group {
+    gap: 10px;
+  }
+}
+
 /* Header Action Buttons */
 .header-actions {
   display: flex;
@@ -353,26 +369,7 @@ button, input, textarea, select {
 }
 
 .header-phone-link {
-  display: none;
-  align-items: center;
-  gap: 6px;
-  font-weight: 700;
-  font-size: 0.92rem;
-  color: var(--color-primary);
-  text-decoration: none;
-  transition: all var(--transition-fast);
-  white-space: nowrap;
-}
-
-@media (min-width: 768px) {
-  .header-phone-link {
-    display: inline-flex;
-  }
-}
-
-.header-phone-link:hover {
-  color: var(--color-accent);
-  transform: translateY(-1px);
+  display: none !important;
 }
 
 .btn-header-wa {

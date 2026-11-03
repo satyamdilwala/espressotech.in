@@ -604,7 +604,7 @@ function initContactForm() {
     feedback.style.display = "block";
     feedback.style.background = "#fff8e6";
     feedback.style.color = "#8f4b00";
-    feedback.innerHTML = "Sending enquiry to dialnsearch@gmail.com...";
+    feedback.innerHTML = "Sending enquiry...";
 
     try {
       const response = await fetch("https://astra.salesfundaa.com/v1/CRM1/espressotech-in/enquiry", {
