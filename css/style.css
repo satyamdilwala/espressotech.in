@@ -1523,7 +1523,7 @@ button, input, textarea, select {
   max-height: 360px;
   width: auto;
   object-fit: contain;
-  transition: transform var(--transition-fast);
+  transition: transform var(--transition-fast), opacity 0.2s ease;
 }
 
 .detail-thumbnails {
@@ -1543,6 +1543,7 @@ button, input, textarea, select {
   cursor: pointer;
   background: #fff;
   transition: all var(--transition-fast);
+  user-select: none;
 }
 
 .thumb-item.active,
