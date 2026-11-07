@@ -466,7 +466,7 @@ Website      : www.espressotech.in
 Facebook     : https://www.facebook.com/profile.php?id=61595606516311
 Instagram    : https://www.instagram.com/_alinza__chai_?utm_source=qr
 LinkedIn     : https://www.linkedin.com/in/alinza-chai-225874444/
-Address      : 4, Narayan Nagar, Nari Sewa Sadan Road, Near Trimurti Restaurant & Bar, Ghatkopar(W), Mumbai-400086, India
+Address      : 4, Narayan Nagar, Nari Sewa Sadan Road, Near Trimurti Restaurant & Bar, Ghatkopar(W), Mumbai-400086, Maharashtra, India
 Major Coverage: Mumbai, Thane, Navi Mumbai & PAN India
 
 COMPANY PROFILE:
