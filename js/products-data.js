@@ -13,8 +13,9 @@ const productsData = [
     gallery: [
       "image/ElaichiTea_1kg_front.png",
       "image/ElaichiTea_1kg_Back.png",
-      "image/Preparation_Elaichi_Ginger_Masala.png"
+      "image/Preparation_Elaichi_Chai.jpg"
     ],
+    prepGuideImage: "image/Preparation_Elaichi_Chai.jpg",
     badge: "Bestseller Chai",
     netWeight: "1 Kg",
     shelfLife: "6 Months",
@@ -49,8 +50,9 @@ const productsData = [
     image: "image/Masala Tea_1kg.JPG",
     gallery: [
       "image/Masala Tea_1kg.JPG",
-      "image/Preparation_Elaichi_Ginger_Masala.png"
+      "image/Preparation_Masala_Chai.jpg"
     ],
+    prepGuideImage: "image/Preparation_Masala_Chai.jpg",
     badge: "Traditional Flavour",
     netWeight: "1 Kg",
     shelfLife: "6 Months",
@@ -268,8 +270,9 @@ const productsData = [
     image: "image/MasalaTea_Sachet_20.png",
     gallery: [
       "image/MasalaTea_Sachet_20.png",
-      "image/Preparation_Elaichi_Ginger_Masala.png"
+      "image/Preparation_Masala_Chai.jpg"
     ],
+    prepGuideImage: "image/Preparation_Masala_Chai.jpg",
     badge: "Office Pantry Favorite",
     netWeight: "20 Sachets Box",
     shelfLife: "9 Months",
@@ -378,8 +381,9 @@ const productsData = [
     image: "image/ElaichiTea_Sachet_20.png",
     gallery: [
       "image/ElaichiTea_Sachet_20.png",
-      "image/Preparation_Elaichi_Ginger_Masala.png"
+      "image/Preparation_Elaichi_Chai.jpg"
     ],
+    prepGuideImage: "image/Preparation_Elaichi_Chai.jpg",
     badge: "Royal Aroma",
     netWeight: "20 Sachets Box",
     shelfLife: "9 Months",
@@ -413,8 +417,10 @@ const productsData = [
     image: "image/Aampanna_1kg.JPG",
     gallery: [
       "image/Aampanna_1kg.JPG",
-      "image/Aampanna_Sachet_20.png"
+      "image/Aampanna_Sachet_20.png",
+      "image/Preparation_Aam_Panna.jpg"
     ],
+    prepGuideImage: "image/Preparation_Aam_Panna.jpg",
     badge: "Summer Special Cooler",
     netWeight: "1 Kg & 20 Sachets Box",
     shelfLife: "12 Months",

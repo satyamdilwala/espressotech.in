@@ -1519,6 +1519,7 @@ button, input, textarea, select {
 .detail-main-img {
   max-height: 360px;
   width: auto;
+  max-width: 100%;
   object-fit: contain;
   transition: transform var(--transition-fast), opacity 0.2s ease;
 }
@@ -1657,6 +1658,52 @@ button, input, textarea, select {
   font-weight: 700;
   flex-shrink: 0;
   margin-top: 2px;
+}
+
+/* Product Preparation Guide Banner & Infographic (100% Mobile Responsive) */
+.prep-guide-wrap {
+  margin-top: 20px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.prep-guide-wrap:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.prep-guide-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .detail-gallery {
+    padding: 16px;
+    position: static;
+  }
+  .detail-main-img-wrap {
+    min-height: 250px;
+    margin-bottom: 14px;
+  }
+  .detail-main-img {
+    max-height: 270px;
+  }
+  .thumb-item {
+    width: 60px;
+    height: 60px;
+    padding: 3px;
+  }
+  .prep-guide-wrap {
+    margin-top: 14px;
+    border-radius: var(--radius-sm);
+  }
 }
 
 /* SERVICES SECTION */

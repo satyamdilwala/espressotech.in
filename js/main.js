@@ -270,6 +270,15 @@ function initProductDetailPage() {
           Preparation Method / How to Prepare
         </h3>
         <ul class="steps-list">${steps}</ul>
+        ${
+          product.prepGuideImage
+            ? `
+          <div class="prep-guide-wrap">
+            <img src="${product.prepGuideImage}" alt="${product.name} Step-by-Step Preparation Guide" class="prep-guide-img" loading="lazy">
+          </div>
+        `
+            : ""
+        }
       </div>
     `;
   }
